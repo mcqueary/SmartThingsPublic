@@ -1,8 +1,8 @@
 /**
  *  Humidity Alert!
  *
- *  Copyright 201a-2018 Brian Critchlow, Larry McQueary
- *  Based on It's too cold code by SmartThings
+ *  Copyright 2014-2018 Brian Critchlow, Larry McQueary
+ *  Based on It's Too Cold code by SmartThings
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  *  in compliance with the License. You may obtain a copy of the License at:
  *
@@ -74,9 +74,6 @@ def humidityHandler(evt) {
 		log.debug "Checking how long the humidity sensor has been reporting >= ${tooHumid}"
 
 		// Don't send a continuous stream of text messages
-		
-
-
 		if (alreadySentSmsTooHigh) {
 			log.debug "Notification already sent within the last ${deltaMinutes} minutes"
 			
